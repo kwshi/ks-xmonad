@@ -1,0 +1,22 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           kshi-xmonad
+version:        0.0.0
+synopsis:       my xmonad configuration
+build-type:     Simple
+
+executable kshi-xmonad
+  main-is: xmonad.hs
+  other-modules:
+      Paths_kshi_xmonad
+  hs-source-dirs:
+      ./
+  build-depends:
+      base
+    , xmonad
+    , xmonad-contrib
+  default-language: Haskell2010
