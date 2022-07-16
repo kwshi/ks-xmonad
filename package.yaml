@@ -1,11 +1,13 @@
-name: kshi-xmonad
+name: ks-xmonad
 version: 0.0.0
 synopsis: my xmonad configuration
 
-executable:
-  main: xmonad.hs
-  source-dirs: .
-  dependencies:
-    - "base"
-    - "xmonad"
-    - "xmonad-contrib"
+executables:
+  xmonad:
+    main: xmonad.hs
+    source-dirs: [".", "lib"]
+    dependencies:
+      - "base"
+      - "containers"
+      - "xmonad"
+      - "xmonad-contrib"
